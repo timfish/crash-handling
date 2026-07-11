@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <!-- next-header -->
 ## [Unreleased] - ReleaseDate
+### Fixed
+- [PR#TODO](https://github.com/EmbarkStudios/crash-handling/pull/TODO) fixed the macOS server not invoking `ServerHandler::on_client_disconnected` when dropping a client after serving a crash dump, matching the behavior of the other platforms.
+
 ## [0.10.1] - 2026-05-12
 ### Fixed
 - [PR#117](https://github.com/EmbarkStudios/crash-handling/pull/117) fixed undefined behavior in `Header::from_bytes` by using `std::ptr::read_unaligned` instead.
